@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The QUAD</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Abstract</a>
+        <a href="section1.html">Allen Library</a>
+        <a class="active" href="section2.html">The QUAD</a>
+        <a href="section3.html">The HUB</a>
+        <a href="references.html">References</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">See Also 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="https://www.lib.washington.edu/suzzallo">UW Library Website</a>
+              <a href="https://www.lib.washington.edu/images2/graphics/campus-maps/quad_map.png/view">UW QUAD Map</a>
+              <a href="https://hub.washington.edu/">UW HUB Website</a>
+            </div>
+          </div> 
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <center>
+            <strong>The QUAD</strong>
+            </center>
+            <br>
+            <center>
+            <a href="https://do206.com/p/15-photos-of-the-uw-cherry-blossoms">
+            <img src="img/TheQuad.jpeg" style="width: 50%; height: auto;">
+            </a>
+        </center>
+            <br>
+            The quad is another one of my favotire places on campus because it is always busy with people 
+            and the brick buildings that surround it have beautiful charm. No matter what season it is something is 
+            always happening in the Quad.
+            <br>
+            <br>
+            <center>
+            <strong>
+            What are some of the highlights of the Quad Every Quarter?:
+            </strong>
+            </center>
+            <br>
+            <button class="accordion">Fall</button>
+            <div class="panel">
+             <p>In the fall the quad really displays the back to school energy with events like club rush happening there.</p>
+            </div>
+
+            <button class="accordion">Winter</button>
+            <div class="panel">
+                <p>In the winter the quad is a wonderful place to enjoy the week of snow that we get.</p>
+            </div>
+
+            <button class="accordion">Spring</button>
+            <div class="panel">
+                <p>The spring is by far the most beautiful time to enjoy the quad as the cherry blossoms bloom. People come from all over the world to take in their beauty.</p>
+            </div>
+            
+    
+    </div>
+
+    <script src="js/main.js"></script>
+    <script> 
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+  }
+    </script>
+
+</body>
+
+</html>
